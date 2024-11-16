@@ -119,5 +119,58 @@ body {
 #video {
     width: 100%;
     height: 450px;
-    object-fit: cover;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+    #video {
+        width: 100%;
+        height: 200px;
+        aspect-ratio: 16/9;
+        object-fit: contain;
+        max-height: 200px;
+    }
+
+    #videoContainer {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #controlsContainer {
+        flex-direction: column;
+        gap: 5px;
+        padding: 0 10px;
+    }
+
+    #searchContainer {
+        width: 100%;
+    }
+
+    #searchInput {
+        width: 50%;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #categorySelect {
+        width: 50%;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #videoListContainer {
+        max-height: 40vh;
+        padding: 0 5px;
+    }
+
+    #videoTitle {
+        font-size: 16px;
+        padding: 0 5px;
+    }
+
+    #videoList li {
+        padding: 8px 5px;
+        font-size: 14px;
+    }
 }
