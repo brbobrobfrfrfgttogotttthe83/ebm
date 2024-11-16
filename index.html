@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Streaming</title>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="./edufboom.png">
+</head>
+
+<body>
+  <h1>Edufboom</h1>
+  <div id="videoTitle">Seleziona il video che vuoi vedere</div>
+  <div id="videoContainer">
+    <video id="video" controls width="100%"></video>
+  </div>
+
+  <div id="videoListContainer">
+    <input type="text" id="searchInput" placeholder="Cerca video...">
+    <select id="categorySelect"></select>
+    </select>
+
+    <ul id="videoList">
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
